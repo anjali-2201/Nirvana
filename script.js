@@ -185,7 +185,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 query += ` ${languageToQuery[language]}`;
             }
             
-            const API_KEY = 'AIzaSyAwj91rSbLhOSl7nR8t14sufB10OHmnlts';
+            const API_KEY = '12345678';
             const response = await fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&q=${encodeURIComponent(query)}&type=video&maxResults=20&videoDuration=medium&key=${API_KEY}`);
             
             if (!response.ok) {
@@ -293,7 +293,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Function to fetch trending songs from YouTube
     async function fetchTrendingSongs() {
         try {
-            const API_KEY = 'YOUR_YOUTUBE_API_KEY'; // Replace with your YouTube API key
+            const API_KEY = '123456789'; // Replace with your YouTube API key
             const response = await fetch(`https://www.googleapis.com/youtube/v3/videos?part=snippet,statistics&chart=mostPopular&regionCode=US&maxResults=10&videoCategoryId=10&type=video&key=${API_KEY}`);
             
             if (!response.ok) {
